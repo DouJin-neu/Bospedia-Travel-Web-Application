@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.djin.pojo.Ticket" table="ticket_info">
+        <id name="ticketID" column="ticketID" type="integer">
+            <generator class="native"/>
+        </id>
+        <property name="ticketName" column="ticketName" type="string"/>
+        <property name="price" column="price" type="double"/>
+        <property name="tIntroduce" column="tIntroduce" type="string"/>
+        <property name="tFlag" column="tFlag" type="string"/>
+        <property name="tDate" column="sellingDate" type="date"/>
+        <property name="collect" column="collect" type="integer"/>
+        <property name="cid" column="categoryID" type="integer"/>
+        <property name="timage" column="timage" type="string"/>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:component-scan base-package="com.djin.*"/>
+    <mvc:default-servlet-handler/>
+
+    <!--<bean class="com.djin.pojo.User" id="user1">
+        <property name="userID" value="001"/>
+        <property name="uname" value="DouJ"/>
+        <property name="password" value="root"/>
+        <property name="birthday" value="2001-12-22"/>
+    </bean>
+
+    <bean id="userController" class="com.djin.controller.UserController"/>-->
+
+   <!-- UserServiceDAO Injection-->
+    <bean id="userService" class="com.djin.service.Impl.UserServiceImpl">
+        <property name="userDAO" ref="userDAO"/>
+    </bean>
+    <bean id="userDAO" class="com.djin.DAO.Impl.UserDAOImpl"/>
+
+    <!-- TicketServiceDAO Injection-->
+    <bean id="ticketService" class="com.djin.service.Impl.TicketServiceImpl">
+        <property name="ticketDAO" ref="ticketDAO"/>
+    </bean>
+    <bean id="ticketDAO" class="com.djin.DAO.Impl.TicketDAOImpl"/>
+
+    <!-- OrderServiceDAO Injection-->
+    <bean id="orderService" class="com.djin.service.Impl.OrderServiceImpl">
+        <property name="orderDAO" ref="orderDAO"/>
+    </bean>
+    <bean id="orderDAO" class="com.djin.DAO.Impl.OrderDAOImpl"/>
+
+    <!-- RestaurantServiceDAO Injection-->
+    <bean id="restaurantService" class="com.djin.service.Impl.RestaurantServiceImpl">
+        <property name="restaurantDAO" ref="restaurantDAO"/>
+    </bean>
+    <bean id="restaurantDAO" class="com.djin.DAO.Impl.RestaurantDAOImpl"/>
+
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+
+
+
+
+</beans>

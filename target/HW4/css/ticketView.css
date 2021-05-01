@@ -1,0 +1,227 @@
+.ticket_content{
+    width: 1350px;
+    height:800px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.ticket_introduce{
+    width: 1350px;
+    min-height:500px ;
+    border-bottom: 1px solid #2b669a;
+}
+
+.ticket_introduce_img{
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.ticket_introduce_img img{
+    width: 400px;
+    height: 400px;
+}
+
+.ticket_introduce_text{
+    width: 600px;
+    height: 150px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid #2b669a;
+}
+
+.ticket_introduce_text #ticket_introduce_title{
+    width: 550px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.ticket_introduce_text #ticket_introduce_brief{
+    width: 550px;
+    height: 30px;
+
+    margin-left: 10px;
+    font-size: large;
+}
+
+#ticket_price{
+    font-weight: bold;
+    font-size: x-large;
+    color: #2b669a;
+    margin-top: 100px;
+}
+
+.addFavorite{
+    width: 100px;
+    height: 100px;
+}
+
+ #favorite{
+    height: 30px;
+    width: 100px;
+    background-color: palevioletred;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+#remove{
+    height: 25px;
+    width: 100px;
+    background-color: lightgray;
+    font-size: 14px;
+    margin-top: 10px
+}
+
+ #isFavorite{
+    height: 30px;
+    width: 100px;
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    border: 1px solid white;
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+}
+
+ .planBox{
+     height: 350px;
+     width: 350px;
+     margin-top: 10px;
+     float: right;
+     margin-right: 250px;
+ }
+
+.planBox .planBox_title{
+    font-size: x-large;
+    font-weight: bold;
+    height: 40px;
+    width: 350px;
+    float: left;
+    padding-left: 50px;
+    background-color: #2b669a;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.ticket_planBox_container{
+    width: 350px;
+    height: 250px;
+    background-color: #e7e7de;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0 0 20px  #2b669a;
+}
+
+.ticket_planBox_container .planBox_dateSelector{
+    border: 1px solid black;
+    height: 200px;
+}
+
+.ticket_planBox_container #orderForm{
+    height: 200px;
+    width: 250px;
+    margin-right: 40px;
+    margin-top: 20px;
+    float: right;
+}
+
+.ticket_planBox_container #minus{
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.ticket_planBox_container #plus{
+    height: 20px;
+    width: 20px;
+    font-weight: bold;
+}
+.ticket_planBox_container #selectedDate, #selectedTime, #totalPrice, #contact{
+    height: 20px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.ticket_planBox_container #number{
+    height: 20px;
+    width: 100px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.ticket_planBox_container  #totalPrice{
+    height: 20px;
+    width: 150px;
+    padding-left: 70px;
+    font-weight: bold;
+
+}
+
+
+.ticket_planBox_container #placeOrder{
+    height: 30px;
+    width: 250px;
+    background-color: #f5e79e;
+    color: #2b669a;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 20px;
+    border: 1px solid #2b669a;
+}
+
+/*Detail Info*/
+.ticket_detail{
+    width: 1200px;
+    height: 300px;
+    float: left;
+}
+.ticket_detail .detail_tab {
+    width: 1350px;
+    height: 200px;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+.ticket_detail .detail_tab_list{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+    background-color: #2b669a;
+    display: flex;
+    color: white;
+
+}
+.ticket_detail .detail_tab_con{
+    overflow: hidden;
+}
+
+.ticket_detail .detail_tab_list li{
+    float:left;
+    height: 40px;
+    line-height: 40px;
+    padding:0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ticket_detail .detail_tab_list .current{
+    background-color: #f5e79e;
+    color: cornflowerblue;
+}
+
+.ticket_detail .ticket_info{
+    display: none;
+    font-size: large;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+

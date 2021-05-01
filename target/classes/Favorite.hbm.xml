@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.djin.pojo.Favorite" table="favorite_info">
+        <id name="productID" column="productID" type="integer">
+            <generator class="native"/>
+        </id>
+        <property name="restaurantID" column="restaurantID" type="integer"/>
+        <property name="ticketID" column="ticketID" type="integer"/>
+        <property name="userID" column="userID" type="integer"/>
+        <property name="collectedDate" column="collectedDate" type="date"/>
+
+    </class>
+</hibernate-mapping>

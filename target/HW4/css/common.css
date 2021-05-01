@@ -1,0 +1,269 @@
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family:'Adobe Fan Heiti Std B';
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+img{
+    display: block;
+}
+table {
+    border-collapse: collapse;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+#header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.shortcut {
+    width: 1200px;
+    height: 50px;
+    margin-left: 250px;
+}
+
+.login_out, .login {  
+    height: 50px;
+    line-height: 36px;
+    float: right;
+
+}
+
+.login {
+    width: 400px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.login #span_username{
+    font-weight: bold;
+}
+
+.login .collection {
+    color: #ff7676;
+    margin: 0 16px 0 10px;
+}
+
+.login .account, .login .cart{
+    color: black;
+    margin-left: 10px;
+}
+.login_out a {
+    color: #000;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.header_wrap {
+    widows: 3;
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+.top_bar {
+    width: 1200px;
+    overflow: hidden;
+}
+
+.logo,
+.search{
+    float: left;
+    display: inline-block;
+
+}
+
+.logo a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.search {
+    margin: 25px 50px 0 50px;
+}
+
+.search_input {
+    float: left;
+    width: 500px;
+    height: 50px;
+    border: 2px solid #ffc900;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.search_input:focus {
+    outline: none;
+}
+
+#autoComplete{
+    background-color:white;
+    border: 1px solid #ffc900;
+    width:500px;
+    height: 300px;
+    position: absolute;
+    display: none;
+    margin-top: 50px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 10px;
+    z-index: 10;
+    overflow: hidden;
+
+}
+
+.search-button {
+    float: left;
+    width: 90px;
+    height: 50px;
+    background: #ffc900;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-size: 18px;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    font-size: 12px;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-size: 12px;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: 12px;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-size: 12px;
+}
+
+
+.hot_tel {
+    width: 250px;
+    height: 36px;
+    float: right;
+    margin-top: 20px;
+
+}
+
+.hot_time {
+    color: #3d3d3f;
+    font-size: 14px;
+}
+
+.hot_num {
+    color: #ffc900;
+    font-size: 18px;
+
+}
+
+.navitem {
+    width: 1350px;
+    height: 40px;
+    margin-left: 100px;
+    background: #ffc900;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav {
+    width: 1200px;
+    margin: 20px auto 0;
+}
+
+.nav li {
+    float: left;
+    margin-left: 30px;
+}
+
+.nav li a {
+    color: #3d3d3f;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    background: none;
+}
+
+.nav .nav-active {
+    background-color: #ffd800;
+    height: 40px;
+}
+
+.nav>li>a {   
+    padding: 10px 15px;
+}
+
+.fl {
+    float: left;
+}
+#footer {
+    width: 100%;
+    background: white;
+}
+
+.company {
+    width: 1350px;
+    height: 40px;
+    line-height: 38px;
+    background: #ffc900;
+    color: #3d3d3f;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 100px;
+}
+
+

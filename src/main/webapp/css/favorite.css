@@ -1,0 +1,122 @@
+.favorite_title {
+    background-image: url("../images/favorite_title.jpg");
+    width: 1350px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+.favorite_title > p{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search_bar{
+    height: 50px;
+    width: 1350px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-bottom: 2px solid #f5e79e;
+}
+
+#filter_table label{
+    padding-left: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+ #favorite_search_keyword{
+    height: 25px;
+    width: 200px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+ #minPrice, #maxPrice{
+    height: 25px;
+    width: 50px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+ #sortMethod{
+    height: 25px;
+    width: 150px;
+    border: 1px solid black;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+ #submit{
+    height: 25px;
+    width: 60px;
+    font-size: 14px;
+    margin-left: 30px;
+    background-color: #f5e79e;
+}
+
+.result_content{
+    width: 1350px;
+    min-height:500px;
+    margin-left: 100px;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #134672, #C2E0F0, #134672);
+}
+#favorite_table{
+    border-collapse: separate;
+    border-spacing: 30px;
+    margin-top: -30px;
+}
+
+.result_content #table_div{
+    width: 300px;
+    height: 350px;
+    margin-left: 100px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    box-shadow: 0 0 20px;
+    background-color: #f5e79e;
+}
+
+.result_content .result_item{
+    font-size: 14px;
+    color: black;
+
+}
+.errorTips{
+    color: red;
+    font-size: 14px;
+}
+
+.result_content .result_item img{
+    width: 300px;
+    height: 250px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px  #2b669a
+}
+
+.result_content .result_item #ticketPrice{
+  float: right;
+    font-size: 18px;
+}
+
+.result_content .result_item #ticketName{
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.result_content .result_item > a{
+    font-size: 16px;
+    float: left;
+    margin-top: 5px;
+}
+
+.remove_btn{
+    background-color: lightgray;
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+    font-weight: bold;
+}

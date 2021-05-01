@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.djin.pojo.Order" table="order_info">
+        <id name="orderID" column="orderID" type="integer">
+            <generator class="native"/>
+        </id>
+        <property name="itemID" column="itemID" type="integer"/>
+         <property name="orderCategory" column="category" type="integer"/>
+         <property name="selectedDate" column="selectedDate" type="string"/>
+         <property name="selectedTime" column="selectedTime" type="string"/>
+         <property name="itemAmount" column="itemAmount" type="integer"/>
+         <property name="party" column="party" type="integer"/>
+         <property name="totalPrice" column="totalPrice" type="double"/>
+         <property name="contact" column="contact" type="string"/>
+         <property name="orderStatus" column="orderStatus" type="string"/>
+         <property name="orderDate" column="orderDate" type="timestamp"/>
+         <property name="modifyDate" column="modifyDate" type="timestamp"/>
+         <many-to-one name="user" cascade="save-update" class="com.djin.pojo.User" column="userID" foreign-key="fk_orderInfo_userID" />
+
+     </class>
+ </hibernate-mapping>

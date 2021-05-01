@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.djin.pojo.User" table="user_info">
+        <id name="userID" column="userID" type="integer">
+            <generator class="native"/>
+        </id>
+        <property name="uname" column="uname" type="string"/>
+        <property name="password" column="password" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="phone" column="phone" type="string"/>
+        <property name="birthday" column="birthday" type="string"/>
+        <property name="sex" column="sex" type="string"/>
+        <property name="role" column="roleID" type="integer"/>
+        <property name="createTime" column="createTime" type="timestamp"/>
+        <property name="updateTime" column="updateTime" type="timestamp"/>
+
+        <set name="orderSet" cascade="save-update">
+            <key column="fk_orderInfo_userID" />
+            <one-to-many class="com.djin.pojo.Order"/>
+        </set>
+
+
+    </class>
+</hibernate-mapping>

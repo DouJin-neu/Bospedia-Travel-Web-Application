@@ -1,0 +1,22 @@
+.success_layout{
+    width: 1350px;
+    height: 585px;
+    background-color: #f5e79e;
+    background-size: 100% 780px;
+    overflow: hidden;
+    margin-left: 100px;
+    alignment: center;
+}
+
+
+.success_layout span{
+    font-weight: bold;
+    font-size: x-large;
+    alignment: center;
+}
+
+.success_layout table{
+    alignment: center;
+    font-size: large;
+    font-weight: bold;
+}

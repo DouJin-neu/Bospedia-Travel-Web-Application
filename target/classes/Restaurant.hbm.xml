@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.djin.pojo.Restaurant" table="restaurant_info">
+        <id name="restaurantID" column="restaurantID" type="integer">
+            <generator class="native"/>
+        </id>
+        <property name="restaurantName" column="restaurantName" type="string"/>
+        <property name="average_price" column="average_price" type="string"/>
+        <property name="rIntroduce" column="rIntroduce" type="string"/>
+        <property name="rCategory" column="rCategory" type="integer"/>
+        <property name="collect" column="collect" type="integer"/>
+        <property name="contact" column="contact" type="string"/>
+        <property name="address" column="address" type="string"/>
+        <property name="timage" column="timage" type="string"/>
+
+    </class>
+</hibernate-mapping>
